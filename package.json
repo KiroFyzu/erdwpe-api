@@ -9,6 +9,7 @@
   "author": "ada lah",
   "license": "ISC",
   "dependencies": {
+    "@xct007/tiktok-scraper": "^0.0.1",
     "axios": "^0.21.4",
     "canvacord": "^5.4.8",
     "chalk": "^4.1.2",

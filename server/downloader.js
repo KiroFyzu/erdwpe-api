@@ -4,7 +4,7 @@ const axios = require('axios');
 const hx = require('hxz-api');
 //scraper
 const { mediafireDl, twitter, ytPlayMp3, ytPlayMp4 } = require('../scraper/index'); 
-const tikmateApp = require('../scraper/tiktok');
+const tiktok = require("@xct007/tiktok-scraper");
 let { igApi } = require("insta-fetcher");
 let ig = new igApi("ds_user_id=4427199241;sessionid=4427199241%3AEYRdDuqdCYXL5D%3A7%3AAYcQY4chlzPU5hCmvr9Vseu541dI8Zp_Pyu4oV3aDA")
 
@@ -42,7 +42,7 @@ router.get('/igdl', async(req, res) => {
 router.get('/tiktok', async(req, res) => {
 	var url = req.query.url
 	if (!url) return res.json({ message: 'masukan parameter Link' })
-	var hasil = await tikmateApp(url)
+	var hasil = await tiktok(url)
 	try {
 		res.json(hasil)
 	} catch(err) {
