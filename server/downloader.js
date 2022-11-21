@@ -3,8 +3,7 @@ var router = express.Router();
 const axios = require('axios');
 const hx = require('hxz-api');
 //scraper
-const { tiktok, mediafireDl } = require('../scraper/index'); 
-const { igDownload, ytPlayMp4, ytPlayMp3, twitter, igStalk } = require('../scraper/igdl'); 
+const { tiktok, mediafireDl, twitter, ytPlayMp3, ytPlayMp4 } = require('../scraper/index'); 
 const { data } = require('cheerio/lib/api/attributes');
 const tikmateApp = require('../scraper/tiktok');
 let { igApi } = require("insta-fetcher");
