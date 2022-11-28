@@ -7,7 +7,17 @@ body {
     
    }
   font-weight: 300; }
+.sticky-ad {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; overflow: visible; position: fixed; text-align: center; top: 0; width: 100%; margin-left:0; left:0%; z-index: 999; max-height: 100px; background-image: none; background-color: none; margin-top: 0; padding: 0; transition: all .4s ease-in-out;}
 
+.sticky-ad-close-button { position: absolute; width: 28px; height: 28px; bottom: -28px; right: 0; background-image: url("data:image/svg+xml;charset=utf8,%3csvg width='13' height='13' viewBox='341 8 13 13' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3cpath style='fill:%234F4F4F' d='M354 9.31L352.69 8l-5.19 5.19L342.31 8 341 9.31l5.19 5.19-5.19 5.19 1.31 1.31 5.19-5.19 5.19 5.19 1.31-1.31-5.19-5.19z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"); background-size: 13px 13px; background-position: center; background-color: none; background-repeat: no-repeat; box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2); border: none; border-radius: 0 0 12px 12px; cursor: pointer;}
+
+.sticky-ad-close-button:before { position: absolute; content: ""; top: -120px; right: 0; left: -20px; bottom: 0;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box;}
+:active,
+:focus { outline: 0 }
+
+@media (min-width: 748px){.sticky-ad {max-width:736px;margin-left:-368px;left:50%;}}
+@media (min-width: 871px){.sticky-ad {max-width:968px;margin-left:-484px;left:50%;}}
 p {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 300; }
