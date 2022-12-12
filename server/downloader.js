@@ -6,7 +6,7 @@ const hx = require('hxz-api');
 const { mediafireDl, twitter, ytPlayMp3, ytPlayMp4 } = require('../scraper/index'); 
 const tiktok = require("@xct007/tiktok-scraper");
 let { igApi } = require("insta-fetcher");
-let ig = new igApi("ds_user_id=4427199241;sessionid=4427199241%3AblRSIGjZlLZiwJ%3A13%3AAYf4-NwZGZ6YHFYmO2ktqbSiEnM86brZfGDIdAibhQ")
+let ig = new igApi("ds_user_id=4427199241;sessionid=4427199241%3AdkW8kLvvx8LJWG%3A27%3AAYfVubdqm-xzIdyHSdkDqm0t4ZMLUi2vvOrvD1nDSQ")
 
 
 router.get("/playmp3", async(req, res, next) => {
